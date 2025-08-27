@@ -11,13 +11,12 @@ body{
 .container{
   position: absolute;
   top: 30%;
-  background-color: #0a213f;
   height:auto;
   width:254px;
   padding:5px 10px 20px 10px;
   border-radius: 20px;
   border: 2px solid #2a5081;
-  background-color: rgb(205, 165, 113);
+  background-color: rgb(97, 197, 113);
 }
 @keyframes bgChange {
   0%   { background: #032034; }
@@ -62,11 +61,14 @@ button:hover{
   color: antiquewhite;
   position: absolute;
   right: 7%;
-  top: 20%;
+  top: 17%;
   font-size: 26px;
   font-style: italic;
 }
 @keyframes breathing{
   0%{box-shadow: 0 0 5px rgba(113, 72, 235, 0.5);}
   100%{box-shadow: 0 0 15px rgb(41, 79, 97);}
+}
+.smallSize{
+  font-size: 17px;
 }
