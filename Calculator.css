@@ -29,9 +29,9 @@ body{
   padding: 5px 2px 35px 0px;
   font-size: 30px;
   text-align: end;
-  background-color:#fff;
+  background-color:transparent;
   color: rgb(227, 133, 9);
-  font-style: italic;
+  font-style:bold;
   border-bottom:2px solid #4c9752;
 }
 .res{
@@ -45,13 +45,14 @@ body{
 .backspace{
   border: none;
   font-size:19px;
-  border-radius:0px;
+  border-radius:30px;
   background: transparent;
-  color:rgb(83, 11, 249);
+  color:rgb(8, 222, 40);
   position: absolute;
   right: 5%;
   top: 23%;
   margin: 5px;
+  cursor: pointer;
 }
 .buttons{
   margin-top: 20px;
@@ -73,6 +74,9 @@ body{
 }
 .buttons button:hover{
   transform: scale(1.5);
+  background-color: transparent;
+  transition: linear .5s;
+  animation: glowing 2s linear infinite;
 }
 .smallSize{
   font-size: 17px;
@@ -82,6 +86,11 @@ body{
   font-weight: 800;
   position: absolute;
   right: 4%;
+  animation: breathing 1.2s infinite;
+}
+.danger{
+  background-color: rgb(236, 48, 48);
+  color: #000;
 }
 @keyframes bgChange {
   0%   { background: #4c0341; }
@@ -89,9 +98,14 @@ body{
   100% { background: #19063c; }
 }
 @keyframes breathing{
-  0%{box-shadow: 0 0 5px rgba(183, 37, 132, 0.5);}
+  0%{box-shadow: 0 0 5px rgba(23, 155, 236, 0.95);}
   25%{box-shadow: 0 0 5px rgba(196, 30, 121, 0.5);}
-  40%{box-shadow: 0 0 5px rgba(147, 17, 56, 0.5);}
+  40%{box-shadow: 0 0 5px rgba(201, 11, 14, 0.774);}
   60%{box-shadow: 0 0 5px rgba(39, 132, 190, 0.5);}
   100%{box-shadow: 0 0 5px rgba(39, 132, 190, 0.5);}
+}
+@keyframes glowing{
+  0%{box-shadow: 0 0 5px rgba(23, 155, 236, 0.95);}
+  50%{box-shadow: 0 0 5px rgba(23, 155, 236, 0.95);}
+  100%{box-shadow: 0 0 5px rgba(23, 155, 236, 0.95);}
 }
