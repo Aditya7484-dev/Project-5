@@ -7,18 +7,20 @@ buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     const numEvent = e.target.innerHTML;
     let res = 0;
+    let round=0;
     try {
       if (numEvent === "=") {
         if (string === "") {
           display.value = " ";
         }else {
-          res = res + math.evaluate(string);
+          round=Math.round(math.evaluate(string)*100)/100;
+          res=res+round;
           display.value = `${string}`;
           result.classList.remove('smallSize');
           result.innerHTML="";
-          result.innerHTML =`= ${res}`;
+          result.innerHTML =`${res}`;
         }
-      } else if (numEvent === "clear") {
+      } else if (numEvent === "C") {
         string = "";
         display.value = " ";
         result.innerHTML = " ";
