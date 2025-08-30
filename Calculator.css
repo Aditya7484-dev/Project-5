@@ -67,7 +67,7 @@ body{
   color: #fff;
   border: none;
   background-color:#2c2525;
-  animation:breathing 2s infinite;
+  animation:breathing 5s infinite;
 }
 .buttons .clear{
   color: #c10d0d;
